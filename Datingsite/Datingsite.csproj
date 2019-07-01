@@ -1,0 +1,349 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5134AE39-EA01-4B78-8846-51CF7D2F94C9}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Datingsite</RootNamespace>
+    <AssemblyName>Datingsite</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="about_us.html" />
+    <Content Include="blog.html" />
+    <Content Include="blog_single.html" />
+    <Content Include="contact_us.html" />
+    <Content Include="css\animate.min.css" />
+    <Content Include="css\bootstrap.min.css" />
+    <Content Include="css\colors.css" />
+    <Content Include="css\colors2.css" />
+    <Content Include="css\colors3.css" />
+    <Content Include="css\flaticon.css" />
+    <Content Include="css\font-awesome.css" />
+    <Content Include="css\ion.rangeSlider.css" />
+    <Content Include="css\ion.rangeSlider.skinFlat.css" />
+    <Content Include="css\magnific-popup.css" />
+    <Content Include="css\nice-select.css" />
+    <Content Include="css\owl.carousel.min.css" />
+    <Content Include="css\owl.theme.default.css" />
+    <Content Include="css\responsive.css" />
+    <Content Include="css\style.css" />
+    <Content Include="fonts\Flaticon.svg" />
+    <Content Include="fonts\fontawesome-webfont.svg" />
+    <Content Include="images\222222.jpg" />
+    <Content Include="images\android.png" />
+    <Content Include="images\bboy.jpg" />
+    <Content Include="images\bg1.jpg" />
+    <Content Include="images\bg2.jpg" />
+    <Content Include="images\bg3.jpg" />
+    <Content Include="images\bg4.jpg" />
+    <Content Include="images\bgrl1.jpg" />
+    <Content Include="images\blog-img.jpg" />
+    <Content Include="images\boy.png" />
+    <Content Include="images\boy2.png" />
+    <Content Include="images\cf1.jpg" />
+    <Content Include="images\f-logo.png" />
+    <Content Include="images\f-logo2.png" />
+    <Content Include="images\fav.png" />
+    <Content Include="images\flg1.jpg" />
+    <Content Include="images\flg10.jpg" />
+    <Content Include="images\flg11.jpg" />
+    <Content Include="images\flg12.jpg" />
+    <Content Include="images\flg2.jpg" />
+    <Content Include="images\flg3.jpg" />
+    <Content Include="images\flg4.jpg" />
+    <Content Include="images\flg5.jpg" />
+    <Content Include="images\flg6.jpg" />
+    <Content Include="images\flg7.jpg" />
+    <Content Include="images\flg8.jpg" />
+    <Content Include="images\flg9.jpg" />
+    <Content Include="images\f_logo2.png" />
+    <Content Include="images\gpluse.png" />
+    <Content Include="images\grl.png" />
+    <Content Include="images\heart.png" />
+    <Content Include="images\heartbg.jpg" />
+    <Content Include="images\img1.jpg" />
+    <Content Include="images\img10.jpg" />
+    <Content Include="images\img100.jpg" />
+    <Content Include="images\img11.jpg" />
+    <Content Include="images\img12.jpg" />
+    <Content Include="images\img13.jpg" />
+    <Content Include="images\img14.jpg" />
+    <Content Include="images\img15.jpg" />
+    <Content Include="images\img16.jpg" />
+    <Content Include="images\img17.jpg" />
+    <Content Include="images\img18.jpg" />
+    <Content Include="images\img19.jpg" />
+    <Content Include="images\img2.jpg" />
+    <Content Include="images\img20.jpg" />
+    <Content Include="images\img21.jpg" />
+    <Content Include="images\img22.jpg" />
+    <Content Include="images\img23.jpg" />
+    <Content Include="images\img24.jpg" />
+    <Content Include="images\img25.jpg" />
+    <Content Include="images\img26.jpg" />
+    <Content Include="images\img27.jpg" />
+    <Content Include="images\img28.jpg" />
+    <Content Include="images\img29.jpg" />
+    <Content Include="images\img3.jpg" />
+    <Content Include="images\img30.jpg" />
+    <Content Include="images\img31.jpg" />
+    <Content Include="images\img32.jpg" />
+    <Content Include="images\img33.jpg" />
+    <Content Include="images\img34.jpg" />
+    <Content Include="images\img35.jpg" />
+    <Content Include="images\img36.jpg" />
+    <Content Include="images\img37.jpg" />
+    <Content Include="images\img38.jpg" />
+    <Content Include="images\img39.jpg" />
+    <Content Include="images\img4.jpg" />
+    <Content Include="images\img40.jpg" />
+    <Content Include="images\img41.jpg" />
+    <Content Include="images\img42.jpg" />
+    <Content Include="images\img43.jpg" />
+    <Content Include="images\img44.jpg" />
+    <Content Include="images\img45.jpg" />
+    <Content Include="images\img46.jpg" />
+    <Content Include="images\img47.jpg" />
+    <Content Include="images\img48.jpg" />
+    <Content Include="images\img48_f.jpg" />
+    <Content Include="images\img49.jpg" />
+    <Content Include="images\img5.jpg" />
+    <Content Include="images\img50.jpg" />
+    <Content Include="images\img51.jpg" />
+    <Content Include="images\img52.jpg" />
+    <Content Include="images\img53.jpg" />
+    <Content Include="images\img54.jpg" />
+    <Content Include="images\img55.jpg" />
+    <Content Include="images\img56.jpg" />
+    <Content Include="images\img57.jpg" />
+    <Content Include="images\img58.jpg" />
+    <Content Include="images\img59.jpg" />
+    <Content Include="images\img6.jpg" />
+    <Content Include="images\img60.jpg" />
+    <Content Include="images\img61.jpg" />
+    <Content Include="images\img62.jpg" />
+    <Content Include="images\img63.jpg" />
+    <Content Include="images\img64.jpg" />
+    <Content Include="images\img65.jpg" />
+    <Content Include="images\img66.jpg" />
+    <Content Include="images\img67.jpg" />
+    <Content Include="images\img68.jpg" />
+    <Content Include="images\img69.jpg" />
+    <Content Include="images\img7.jpg" />
+    <Content Include="images\img70.jpg" />
+    <Content Include="images\img71.jpg" />
+    <Content Include="images\img72.jpg" />
+    <Content Include="images\img73.jpg" />
+    <Content Include="images\img74.jpg" />
+    <Content Include="images\img75.jpg" />
+    <Content Include="images\img76.jpg" />
+    <Content Include="images\img77.jpg" />
+    <Content Include="images\img78.jpg" />
+    <Content Include="images\img79.jpg" />
+    <Content Include="images\img8.jpg" />
+    <Content Include="images\img80.jpg" />
+    <Content Include="images\img81.jpg" />
+    <Content Include="images\img82.jpg" />
+    <Content Include="images\img83.jpg" />
+    <Content Include="images\img84.jpg" />
+    <Content Include="images\img85.jpg" />
+    <Content Include="images\img86.jpg" />
+    <Content Include="images\img87.jpg" />
+    <Content Include="images\img88.jpg" />
+    <Content Include="images\img89.jpg" />
+    <Content Include="images\img9.jpg" />
+    <Content Include="images\img90.jpg" />
+    <Content Include="images\img91.jpg" />
+    <Content Include="images\img92.jpg" />
+    <Content Include="images\img93.jpg" />
+    <Content Include="images\img94.jpg" />
+    <Content Include="images\img95.jpg" />
+    <Content Include="images\img96.jpg" />
+    <Content Include="images\img97.jpg" />
+    <Content Include="images\img98.jpg" />
+    <Content Include="images\img99.jpg" />
+    <Content Include="images\loader.gif" />
+    <Content Include="images\loader2.gif" />
+    <Content Include="images\Logo.png" />
+    <Content Include="images\Logo1.png" />
+    <Content Include="images\logo2.png" />
+    <Content Include="images\mob.png" />
+    <Content Include="images\mrk.png" />
+    <Content Include="images\navbg.jpg" />
+    <Content Include="images\ol.gif" />
+    <Content Include="images\online.gif" />
+    <Content Include="images\ou1.jpg" />
+    <Content Include="images\ou2.jpg" />
+    <Content Include="images\ou3.jpg" />
+    <Content Include="images\ou4.jpg" />
+    <Content Include="images\ou5.jpg" />
+    <Content Include="images\ou6.jpg" />
+    <Content Include="images\ou7.jpg" />
+    <Content Include="images\ou8.jpg" />
+    <Content Include="images\ou9.jpg" />
+    <Content Include="images\page-info-bg.jpg" />
+    <Content Include="images\pbg1.png" />
+    <Content Include="images\pbg2.png" />
+    <Content Include="images\pbg3.png" />
+    <Content Include="images\pbg4.png" />
+    <Content Include="images\photo-1487704645551-52a0ce1453f0.jpg" />
+    <Content Include="images\photo-1505840717430-882ce147ef2d1.jpg" />
+    <Content Include="images\pimg.png" />
+    <Content Include="images\r.png" />
+    <Content Include="images\r2.png" />
+    <Content Include="images\slider-home2.jpg" />
+    <Content Include="images\slider-home22.jpg" />
+    <Content Include="images\slide_img1.jpg" />
+    <Content Include="images\slide_img2.jpg" />
+    <Content Include="images\slide_img3.jpg" />
+    <Content Include="images\slide_img4.jpg" />
+    <Content Include="images\slide_img5.jpg" />
+    <Content Include="images\slide_img6.jpg" />
+    <Content Include="images\slide_img7.jpg" />
+    <Content Include="images\snow.png" />
+    <Content Include="images\tm1.jpg" />
+    <Content Include="images\tm2.jpg" />
+    <Content Include="images\tm3.jpg" />
+    <Content Include="index.html" />
+    <Content Include="index2.html" />
+    <Content Include="index3.html" />
+    <Content Include="js\bootstrap.min.js" />
+    <Content Include="js\custom.js" />
+    <Content Include="js\jquery.min.js" />
+    <Content Include="js\plugins.js" />
+    <Content Include="online_search_country.html" />
+    <Content Include="online_search_result.html" />
+    <Content Include="search_by_map.html" />
+    <Content Include="search_girls.html" />
+    <Content Include="videos\vid-thumb.jpg" />
+    <Content Include="videos\vid2.mp4" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+    <Compile Include="obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="fonts\Flaticon.eot" />
+    <Content Include="fonts\Flaticon.ttf" />
+    <Content Include="fonts\Flaticon.woff" />
+    <Content Include="fonts\fontawesome-webfont.eot" />
+    <Content Include="fonts\fontawesome-webfont.ttf" />
+    <Content Include="fonts\fontawesome-webfont.woff" />
+    <Content Include="fonts\fontawesome-webfont.woff2" />
+    <Content Include="fonts\FontAwesome.otf" />
+    <Content Include="fonts\_flaticon.scss" />
+    <Content Include="obj\Debug\Datingsite.csproj.CoreCompileInputs.cache" />
+    <Content Include="obj\Debug\Datingsite.csprojAssemblyReference.cache" />
+    <Content Include="obj\Debug\DesignTimeResolveAssemblyReferencesInput.cache" />
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="obj\Debug\TempPE\" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>1071</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:1071/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
